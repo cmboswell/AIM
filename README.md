@@ -26,6 +26,9 @@ config.py -
 generateVisualization.py -
     Generates a series of visualizations used in the final presentation and report for this project.
 
+companies.csv -
+    A CSV file listing all of the companies on the S&P 500 as of Fall 2018.
+
 company_filter.py -
     A list with a series of common words that are included in the names of corporations listed on the S&P 500. These words do not count as keywords which can distinguish a Tweet as relevant
 
