@@ -8,6 +8,13 @@ With recent advancements in deep learning, neural networks have become extremely
 2. Prerequisites
 DO WE NEED A FULL LIST OF PACKAGES AND DETAILS ON HOW TO BUILD AND RUN OUR SOFTWARE???
 
+For the machine learning algorithm `main.py`:
+1. Keras must be installed.
+2. Tensorflow must be installed.
+3. With these packages the testing module of the Machine Learning algorithm main.py can be run and it will run the testing module function which is specified to be run as part of main on line 288. 
+
+4. To get next day predictions the 7 excel data files 30yearTbill.csv, 10yearTbill.csv, 2yearTbill.csv, totals.csv, financials.csv, gspc.csv, and sentiment2.csv must be up to date from March 30, 2000. Or in the case of the sentiment2.csv January 1, 2018. Then on line 275 and 279 the number of training examples must be changed to account for the increased number of days from the beginning to the end of the datasets.
+
 3. Contents
 
 twitterBot.py -     
@@ -47,3 +54,26 @@ positve_words.txt
 
 user_index.csv
     A list of the Twitter usernames for the users who comprise our sample set.
+
+2yearTbill.csv
+30yearTbill.csv
+10yearTbill.csv
+    Data-sets of daily US treasury bond prices.
+ 
+ sentiment2.csv
+    Excel file of daily twitter sentiment data from 2018. 
+ 
+ totals.csv
+ financials.csv
+ gspc.csv
+    Daily stock index datasets from March 2000 through October 2018.
+    
+dataprocessing.csv
+    The data reading module of the machine learning algorithm which is called by main to generate training and testing datasets.
+  
+feature_extraction.csv
+    The module tasked with extracting features from simply NumPy arrays of the daily csv data read in by dataprocessing.csv. This module                               is called by dataprocessing.csv.
+    
+main.csv
+    This module runs the machine learning algorithm and testing function. It also has the functionality to give next day trading predictions. However in order to do this the datafiles must be up to date and the number of training examples must be updated with the date as specified in line 275 and line 279.
+  
