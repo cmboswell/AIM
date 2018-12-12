@@ -74,6 +74,7 @@ dataprocessing.csv
 feature_extraction.csv
     The module tasked with extracting features from simply NumPy arrays of the daily csv data read in by dataprocessing.csv. This module                               is called by dataprocessing.csv.
     
-main.csv
-    This module runs the machine learning algorithm and testing function. It also has the functionality to give next day trading predictions. However in order to do this the datafiles must be up to date and the number of training examples must be updated with the date as specified in line 275 and line 279.
+main.py
+    This module runs the machine learning algorithm and testing function. This module contains the Neural Network training and the wrapper functions to call the dataloading functions. It also holds the trading algorithm and the testing wrapper function which calculates and documents the performance of the algorithm. It also has the functionality to give next day trading predictions. However in order to do this the datafiles must be up to date and the number of training examples must be updated with the date as specified in line 275 and line 279. A test has been called at the end of the program and will execute with the terminal command python main.py. 
+Additionally `run_trials()` can be used to create a custom simulation. Furthermore `get_next_day_predictions()` can be called with the appropriate steps as highlighted above to get a prediction for the most recent trading day.
   
