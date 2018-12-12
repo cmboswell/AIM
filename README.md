@@ -68,10 +68,10 @@ user_index.csv
  gspc.csv
     Daily stock index datasets from March 2000 through October 2018.
     
-dataprocessing.csv
+dataprocessing.py
     The data reading module of the machine learning algorithm which is called by main to generate training and testing datasets.
   
-feature_extraction.csv
+feature_extraction.py
     The module tasked with extracting features from simply NumPy arrays of the daily csv data read in by dataprocessing.csv. This module                               is called by dataprocessing.csv.
     
 main.py
